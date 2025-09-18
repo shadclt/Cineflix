@@ -1,0 +1,233 @@
+/* Original Styles */
+body {
+  background-image: url(bgimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Signbutton {
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+  width: 2.5cm;
+  color: white;
+}
+.Signbutton:hover {
+  background-color: maroon;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+h6{
+  color: white;
+}
+h5,p{
+  text-align: left;
+}
+input {
+  background-color: rgba(0, 0, 0, 0.573);
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+}
+
+.subbutton {
+  border-radius: 5px;
+}
+.subbutton:hover {
+  background-color: maroon;
+}
+
+.curvcontainer {
+  background-color: black;
+}
+.btn-watch {
+  background-color: red;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  width: 4.7cm;
+  height: 6.2cm;
+}
+.card {
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+h3, h4 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+
+.card-body {
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  color: white;
+  border-radius: 20px;
+}
+
+
+
+/* Updated email form styles */
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.email-form input[type="email"] {
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.573);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 300px;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+.email-form button.subbutton {
+  padding: 0.5rem 1rem;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.email-form button.subbutton:hover{
+    background-color: maroon;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.container.center {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3.4rem;
+  }
+  .hero h6 {
+    font-size: 0.9rem;
+  }
+  .h7{
+    color: gray;
+    text-align: left;
+  }
+
+  .Signbutton {
+    max-width: 100%;
+  }
+
+  .email-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .email-form input[type="email"],
+  .email-form button.subbutton {
+    width: 100%;
+  }
+
+  .card-body {
+    font-size: 0.9rem;
+  }
+
+  h3, h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.accordion-button{
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-size: 1.5rem;
+}
+.accordion-button:hover{
+  background-color: rgb(71, 71, 71);
+  transition: 0.2s;
+  color: white;
+}
+.accordion-body{
+  background-color:  rgb(46, 46, 46);
+  color: white;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.netflix-footer {
+  background-color: #141414;
+  color: #999;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-note {
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+.footer-container{
+  text-align: center;
+  align-items: center;
+}
